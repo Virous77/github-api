@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Alert from "./UI/Alert";
 import User from "./pages/User";
 import Home from "./pages/Home";
@@ -19,7 +19,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/user/:login" element={<User />} />
-          <Route path="/*" element={<NotFound />} />
+          <Route path="*" element={<Navigate replace to="/" />} />
         </Routes>
       </main>
       <Footer />
