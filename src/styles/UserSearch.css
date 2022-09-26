@@ -33,11 +33,11 @@ form {
   transform: scale(1.01);
 }
 
-.clear {
+/* .clear {
   flex: 1;
   display: flex;
   justify-content: start;
-}
+} */
 
 .clear button {
   padding: 15.3px 2rem;
