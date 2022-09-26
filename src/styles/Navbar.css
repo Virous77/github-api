@@ -1,0 +1,43 @@
+.nav {
+  background-color: #bbbfca;
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.github {
+  background-color: black;
+  border-radius: 100px;
+}
+
+a {
+  color: #f4f4f2;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 1.3rem;
+}
+
+.home {
+  font-size: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media (max-width: 630px) {
+  .nav {
+    padding: 1rem;
+  }
+}

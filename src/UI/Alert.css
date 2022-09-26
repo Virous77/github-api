@@ -1,0 +1,16 @@
+.error-alert {
+  width: fit-content;
+  padding: 1rem;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: red;
+  position: absolute;
+  left: 3%;
+}
+
+.error-icon {
+  color: red;
+  display: flex;
+}

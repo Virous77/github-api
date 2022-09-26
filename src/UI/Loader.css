@@ -1,0 +1,21 @@
+.load {
+  text-align: center;
+}
+
+.loader {
+  margin: 5rem auto;
+  text-align: center;
+  height: 2rem;
+  width: 2rem;
+  color: #bbbfca;
+  animation: rotate 2s infinite linear;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

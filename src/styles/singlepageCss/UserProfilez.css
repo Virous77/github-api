@@ -1,0 +1,74 @@
+.visits {
+  margin-top: 1rem;
+  background-color: blue;
+  width: fit-content;
+  padding: 5px 1rem;
+  border-radius: 2px;
+}
+
+.visits:hover {
+  transform: scale(1.01);
+}
+
+.user-links {
+  display: flex;
+  margin-top: 2rem;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.locationExist,
+.Website {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.location,
+.blog,
+.twitter {
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Website {
+  margin-bottom: 0.3rem;
+}
+
+.website-info a {
+  font-size: 0.9rem;
+}
+
+.location-info {
+  font-weight: 100;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.twitters {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 0.3rem;
+}
+
+.twitter a {
+  font-size: 0.9rem;
+  opacity: 1;
+}
+
+.visit-link {
+  font-size: 0.7rem;
+}
+
+@media (max-width: 962px) {
+  .user-links {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .location,
+  .blog,
+  .twitter {
+    width: 100%;
+  }
+} ;

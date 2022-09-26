@@ -1,0 +1,78 @@
+.users {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 100%;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.userList {
+  list-style: none;
+  padding: 1rem;
+  background-color: #bbbfca;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 2px 3px 8px rgb(79, 78, 78);
+  border-radius: 10px;
+}
+
+.userList:hover {
+  transform: scale(1.01);
+  background-color: #b2b6c0;
+}
+
+.avatar img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100px;
+  display: flex;
+}
+
+.users-data {
+  flex: 50%;
+  /* margin-left: 3rem; */
+  color: black;
+  text-align: end;
+}
+
+.userList p {
+  width: fit-content;
+}
+
+.users-data h4 {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+  font-weight: 400;
+  text-align: end;
+}
+
+.visit {
+  opacity: 0.5;
+  font-size: 0.9rem;
+  color: black;
+}
+
+@media (max-width: 1260px) {
+  .users {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1040px) {
+  .users {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 820px) {
+  .users {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .users {
+    grid-template-columns: 1fr;
+  }
+}

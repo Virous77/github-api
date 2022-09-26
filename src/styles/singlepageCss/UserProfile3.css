@@ -1,0 +1,58 @@
+.follow-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.following,
+.followers,
+.repos,
+.gists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.followers span,
+.following span,
+.repos span,
+.gists span {
+  opacity: 0.7;
+  font-size: 0.7rem;
+}
+
+.followers-count,
+.following-count {
+  font-size: 1.3rem;
+  margin-top: 0.3rem;
+}
+
+.followers {
+  grid-area: followers;
+}
+
+.following {
+  grid-area: following;
+}
+
+.followers-icon,
+.following-icon {
+  font-size: 20px;
+  color: aquamarine;
+}
+
+@media (max-width: 960px) {
+  .follow-section {
+    flex-direction: column;
+  }
+
+  .followers {
+    width: 100%;
+  }
+}
