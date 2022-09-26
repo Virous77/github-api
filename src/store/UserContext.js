@@ -4,9 +4,9 @@ import UsersReducer from "./UsersReducer";
 ///Context
 const GithubContext = createContext();
 
-//API DATA
-const GITHUB_URL = "https://api.github.com";
-const TOKEN = "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";
+// //API DATA
+// const GITHUB_URL = "https://api.github.com";
+// const TOKEN = "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";
 
 //Provider
 export const UserProvider = ({ children }) => {
@@ -23,15 +23,13 @@ export const UserProvider = ({ children }) => {
   const SearchUsers = async (text) => {
     setLoading();
 
+    console.log(text);
+
     const params = new URLSearchParams({
       q: text,
     });
 
-    const res = await fetch(`${GITHUB_URL}/search/users?${params}`, {
-      headers: {
-        Authorization: `token ${TOKEN}`,
-      },
-    });
+    const res = await fetch(`https://api.github.com/search/users?${params}`);
 
     const { items } = await res.json();
     dispatch({
@@ -49,11 +47,9 @@ export const UserProvider = ({ children }) => {
       per_page: 10,
     });
 
-    const res = await fetch(`${GITHUB_URL}/users/${login}/repos?${params}`, {
-      headers: {
-        Authorization: `token ${TOKEN}`,
-      },
-    });
+    const res = await fetch(
+      `https://api.github.com/users/${login}/repos?${params}`
+    );
 
     const data = await res.json();
     dispatch({
@@ -66,11 +62,7 @@ export const UserProvider = ({ children }) => {
   const userDeatils = async (login) => {
     setLoading();
 
-    const res = await fetch(`${GITHUB_URL}/users/${login}`, {
-      headers: {
-        Authorization: `token ${TOKEN}`,
-      },
-    });
+    const res = await fetch(`https://api.github.com/users/${login}`);
 
     if (res.status === 404) {
       window.location = "/notfound";
