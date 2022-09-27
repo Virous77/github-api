@@ -7,7 +7,7 @@ const AppAbout = () => {
       <h2>Github</h2>
       <p>
         A perfect app to search Github profiles. You can access all the data
-        about certiain prifile.
+        about certain profile.
       </p>
 
       <p>
